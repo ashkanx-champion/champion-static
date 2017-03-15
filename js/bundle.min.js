@@ -36395,6 +36395,8 @@
 	    var btn_submit = void 0,
 	        form_type = void 0;
 
+	    var hidden_class = 'invisible';
+
 	    var fields = {
 	        txt_unlock_password: '#txt_unlock_password',
 	        txt_lock_password: '#txt_lock_password',
@@ -36418,7 +36420,7 @@
 	            } else {
 	                form_type = views.lock_cashier;
 	            }
-	            $('#form_' + form_type + '_cashier').show();
+	            $('#form_' + form_type + '_cashier').removeClass(hidden_class);
 	            initForm(form_type);
 	        });
 	    };
@@ -36459,10 +36461,10 @@
 
 	            ChampionSocket.send(data).then(function (response) {
 	                if (response.error) {
-	                    $('#error-cashier-password').removeClass('hidden').text(response.error.message);
+	                    $(form_selector + ' #msg_form').removeClass(hidden_class).text(response.error.message);
 	                } else {
-	                    $form.hide();
-	                    $('#client_message').show().find('.notice-msg').text('Your settings have been updated successfully.');
+	                    $form.addClass(hidden_class);
+	                    $('.notice-msg').removeClass(hidden_class).text('Your settings have been updated successfully.');
 	                }
 	            });
 	        }

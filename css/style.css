@@ -160,15 +160,6 @@ h1.main-title {
   width: 65px;
 }
 
-@media (max-width: 480px) {
-  .signup-box input {
-    margin: 15px 0;
-  }
-
-  #end_note, #license-box-container {
-    display: none;
-  }
-}
 #footer .fx-footer {
   display: table;
   width: 100%;
@@ -259,11 +250,6 @@ h1.main-title {
   vertical-align: top;
 }
 
-@media (max-width: 980px) {
-  .fx-panel, .fx-panel-item {
-    height: auto;
-  }
-}
 .fx-section {
   padding: 20px 0 40px;
 }
@@ -302,13 +288,6 @@ h1.main-title {
   padding-left: 90px;
 }
 
-@media (max-width: 767px) {
-  .fx-home-intro p:first-child {
-    padding-left: 10px;
-    padding-bottom: 20px;
-    text-align: center;
-  }
-}
 .fx-title {
   text-align: center;
   margin: 12px 0;
@@ -359,11 +338,6 @@ h1.main-title {
   margin-bottom: 10px;
 }
 
-@media (max-width: 767px) {
-  .fx-platform-options .col-md {
-    margin-bottom: 30px;
-  }
-}
 .fx-about-header {
   width: 100%;
   /* for IE 6 */
@@ -424,11 +398,6 @@ h1.main-title {
   padding: 10px;
 }
 
-@media (max-width: 768px) {
-  .fx-package {
-    margin-top: 50px;
-  }
-}
 .space-sm {
   width: 130px;
   display: inline;
@@ -582,7 +551,7 @@ fieldset {
 }
 
 .lg-padding {
-  padding: 20px;
+  padding: 20px !important;
 }
 
 .txt-right {
@@ -597,7 +566,16 @@ fieldset {
 }
 
 .topbar {
-  padding: 3px 0 !important;
+  padding: 0 !important;
+  height: 30px;
+}
+.topbar .menu-container {
+  line-height: 30px;
+}
+.topbar .upgrade-message a {
+  padding: 0 10px;
+  background: #FFF;
+  color: #013365;
 }
 
 .languages {
@@ -736,12 +714,9 @@ ol ol ol ol li:before {
   counter-increment: item4;
 }
 
-.text-display {
-  display: block;
-  font-weight: 400;
-  border: 1px solid #F2F2F2;
-  padding: 5px 10px;
-  border-radius: 5px;
+ul.no-padding, ul.no-padding li {
+  padding-left: 0;
+  margin-left: 0;
 }
 
 #profile-tabs li {
@@ -2043,5 +2018,60 @@ body .top-nav-menu li a {
 
   .signup-box button {
     margin: 0 0 15px;
+  }
+}
+@media (max-width: 575px) {
+  .hidden-xs-down {
+    display: none !important;
+  }
+
+  .signup-box input {
+    margin: 15px 0;
+  }
+
+  #end_note, #license-box-container {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .hidden-sm-down {
+    display: none !important;
+  }
+
+  .fx-home-intro p:first-child {
+    padding-left: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .fx-platform-options .col-md {
+    margin-bottom: 30px;
+  }
+
+  .fx-package {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .hidden-sm-up {
+    display: none !important;
+  }
+}
+@media (max-width: 991px) {
+  .hidden-md-down {
+    display: none !important;
+  }
+
+  .top-nav-menu a {
+    font-size: 0.9rem !important;
+  }
+
+  .fx-panel, .fx-panel-item {
+    height: auto;
+  }
+}
+@media (max-width: 1199px) {
+  .hidden-lg-down {
+    display: none !important;
   }
 }
