@@ -18,25 +18,26 @@
     <meta name="description" content="ChampionFX Static" />
     <link rel="icon" type="image/png" sizes="16x16" href="/champion-static/images/favicons/CFX_favicon16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/champion-static/images/favicons/CFX_favicon32.png" />
-     <link rel="stylesheet" href="/champion-static/css/flex.min.css?m2o11n3o" />
-     <link rel="stylesheet" href="/champion-static/css/style.min.css?m2o11n3o" />
-     <link rel="stylesheet" href="https://style.champion-fx.com/binary.css?m2o11n3o" />
-      <script src="/champion-static/js/bundle.js?m2o11n3o" type="text/javascript"></script>
-     <script src="https://style.champion-fx.com/binary.js?m2o11n3o" type="text/javascript"></script>
+     <link rel="stylesheet" href="/champion-static/css/flex.min.css?0z1zod99" />
+     <link rel="stylesheet" href="/champion-static/css/style.min.css?0z1zod99" />
+     <link rel="stylesheet" href="https://style.champion-fx.com/binary.css?0z1zod99" />
+      <script src="/champion-static/js/bundle.js?0z1zod99" type="text/javascript"></script>
+     <script src="https://style.champion-fx.com/binary.js?0z1zod99" type="text/javascript"></script>
      
 </head>
 <body>
-    <div class="topbar primary-color-dark">
+    <div id="msg_notification" class="notice-msg center-text"></div>
+<div class="topbar primary-color-dark">
     <div class="menu-container">
         <div class="row">
             <div class="col-sm-12 topbar-container flex-items-sm-middle">
                 <div class="topbar-contacts">
                     <ul>
                         <li class="last"><a href="/champion-static/en/contact.html">Contact Us</a></li>
-                        <li id="main-login" class="FX__Header__cta hidden"><a class="button-secondary" href="javascript:;">Log In</a></li>
+                        <li id="main-login" class="FX__Header__cta invisible"><a class="button-secondary" href="javascript:;">Log In</a></li>
                     </ul>
                 </div>
-                <div class="upgrade-message hidden">
+                <div class="upgrade-message invisible">
                     <a href="/champion-static/en/new-account/real.html">Upgrade to a Real Account</a>
                 </div>
                 <div class="invisible">
@@ -65,7 +66,7 @@
         </div>
     </div>
 </div>
-    <div class="dark-blue header">
+    <div id="header" class="dark-blue header">
     <div class="menu-container">
         <div class="row">
             <div class="col-md-3 col-sm-6 col-xs-6 vertical-center">
@@ -81,7 +82,7 @@
                 </div>
             </div>
             <div class="col-md-2 push-md-7 col-sm-6 col-xs-6 vertical-center">
-                <div id="main-logout" class="hidden">
+                <div id="main-logout" class="invisible">
                     <ul id="main-account" class="nav-menu main-nav">
                         <li class="account">
                             <a href="javascript:;">
@@ -134,15 +135,15 @@
                         </li>
                     </ul>
                 </div>
-                <div id="main-signup" class="hidden">
+                <div id="main-signup" class="invisible">
                     <ul class="signup-button">
                         <li class="">
-                            <button class="button-secondary" href="javascript:;">Sign Up</button>
+                            <a class="button-secondary" href="/champion-static/en/home.html#signup"><span>Sign Up</span></a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-md-7 pull-md-2 hidden-sm-down">
+            <div class="col-md-7 pull-md-2 hidden-sm-down vertical-center">
                 <ul class="top-nav-menu">
                     <li>
                         <a href="/champion-static/en/about-us.html" class="nav-dropdown-toggle">About</a>
@@ -152,6 +153,9 @@
                     </li>
                     <li>
                         <a href="/champion-static/en/binary-options.html" class="nav-dropdown-toggle">Binary Options</a>
+                    </li>
+                    <li>
+                        <a href="/champion-static/en/trading-platform.html" class="nav-dropdown-toggle">Trading Platform</a>
                     </li>
                     <li>
                         <a href="/champion-static/en/partnerships.html" class="nav-dropdown-toggle">Partnerships</a>
@@ -164,50 +168,81 @@
 
     <main class="page-content" aria-label="Content" id="champion-container">
         <div class="wrapper" id="champion-content">
-            <div class="fx-section-sm center-text">
+            <div class="fx-section-sm">
     <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <h2>Customer service is not just a department, it is the entire company. Trade with Champion FX - where the client is <i>KING.</i></h2>
+        <div class="center-text">
+            <h1 class="main-title" >About ChampionFX</h1>
+            <p>
+                Customer service is not just a department, it is the entire company.
+                <br> Trade with ChampionFX –– where the client is king.
+                <br> The world’s first dedicated MT5 broker.
+            </p>
+        </div>
+
+        <div class="fx-divider"></div>
+
+        <div class="fx-about-header vertical-center">
+            <div class="row content-inverse-color">
+                <div class="col-md-7">
+                    <p>The ChampionFX brand was founded and launched in 2017 with a clear vision to provide traders with the world’s best customer experience, superior customised trading conditions, state-of-the-art trading tools, and access to many markets.</p>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="fx-about-header content-inverse-color">
-    <div class="container">
+
+        <div class="fx-divider"></div>
+
+        <p>We’re committed to delivering the necessary trading tools and resources that enable traders to further develop their trading skills, and ultimately become champion traders.</p>
+        <p>Our client-centric approach puts our clients’ needs at the centre of our operations.</p>
+        <p>We provide our clients with access to top-tier liquidity and advanced trade execution with the No Dealing Desk (NDD) model.</p>
+
+        <div class="separator fill-bg-color"></div>
+
+        <h2>Mission</h2>
+        <p>Our mission is to make trading accessible to all by offering smart custom trading solutions to local markets around the world.</p>
+        <p>We aim to place our clients’ needs at the centre of our operations and dedicate ourselves to maintain the highest level of client satisfaction.</p>
+        <p>ChampionFX is committed to becoming an industry leader by placing our clients’ needs at the centre of every decision we make. As the markets continually evolve, ChampionFX will continuously update our services to meet trader demands.</p>
+
+        <div class="separator fill-bg-color"></div>
+
+        <h2>Values</h2>
+        <p>At ChampionFX, we remain dedicated to creating a dynamic environment that both respects traders and equips them with all necessary tools to take their customer experience to a whole new “champion” level. </p>
+        <p>We will accomplish this by committing ourselves to these values:</p>
+        <ul class="bullet">
+            <li>Client satisfaction</li>
+            <li>Expansion and refinement of our business model — always with a trader’s needs in mind</li>
+            <li>Honesty and integrity</li>
+            <li>Respect and appreciation</li>
+            <li>Positive thinking</li>
+            <li>Inspiring and motivating people to achieve greatness</li>
+        </ul>
+
+        <div class="separator fill-bg-color"></div>
+
+        <h2>License</h2>
+        <div class="fx-divider"></div>
         <div class="row">
-            <div class="col-sm-8 flex-sm-middle">
-                <p>The Champion FX brand was founded and launched in 2017 with a clear vision to provide traders with the world's best customer experience, superior customised trading conditions, state-of-the-art trading tools and access to many markets.</p>
+            <div class="col-sm-5 primary-color">
+                <div class="lg-padding">
+                    <img src="/champion-static/images/vfsc.png" class="fx-about-image" />
+                </div>
+                <div class="row fx-tb content-inverse-color">
+                    <div class="col-sm lg-padding">
+                        <p>ChampionFX is fully regulated by the Vanuatu Financial Services Commission (VFSC) bearing license number 14772. Its registered office is located at Govant Building, Port Vila, P.O. Box 1276, Vanuatu, Republic of Vanuatu.</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-4 flex-sm-middle">
-                <img src="/champion-static/images/logo/CFX_logomark_light.svg" alt="">
+            <div class="col-sm-5 push-sm-2 primary-color">
+                <div class="lg-padding">
+                    <img src="/champion-static/images/fiuv.png" class="fx-about-image" />
+                </div>
+                <div class="row fx-tb content-inverse-color">
+                    <div class="col-sm lg-padding">
+                        <p>ChampionFX is also registered with the Financial Intelligence Unit (FIU) of Vanuatu for compliance with VFSC Anti-Money Laundering rules. </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="fx-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md center-text">
-                <p><img class="responsive img-lg" src="/champion-static/images/about-1.jpg" alt=""></p>
-            </div>
-            <div class="col-md flex-md-middle">
-                <p>Binary options trading is a special type of online trading with a fixed payout, in which you predict the outcome from two possible results. You also know exactly what you stand to win or lose. Best of all, you never have to worry about slippages, margin calls, or stops.</p>
-            </div>
-        </div>
-        <div class="fx-hr"></div>
-        <div class="row">
-            <div class="col-md center-text">
-                <p>Our client-centric approach puts our client's needs at the centre of our operations.</p>
-                <p><img class="responsive img-lg" src="/champion-static/images/about-2.jpg" alt=""></p>
-            </div>
-        </div>
-        <div class="fx-hr"></div>
-        <div class="row">
-            <div class="col-md center-text">
-                <p>Champion FX offers Forex, commodities, energies, indices, stocks, and CFDs. We provide our clients with access to top-tier liquidity and advanced trade execution with the No Dealing Desk (NDD) model.</p>
-            </div>
-        </div>
+        <div class="fx-divider"></div>
     </div>
 </div>
         </div>
@@ -268,7 +303,7 @@
             </div>
         </div>
     </div>
-    <div id="end_note" class="invisible"></div>
+    <div id="end_note" class="invisible hidden-xs-down"></div>
 </footer>
 </body>
 </html>
