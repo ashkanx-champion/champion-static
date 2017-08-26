@@ -15,30 +15,42 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
     <title>Payment Methods | Champion-FX.com</title>
-    <meta name="description" content="ChampionFX Static" />
+    <meta name="description" content="Access the world markets through one powerful all in one platform. The best choice for the modern trader where the client is king." />
+
+    <meta property="og:title" content="Champion-FX.com" />
+    <meta property="og:type"  content="website" />
+    <meta property="og:image" content="/champion-static/images/cfx-animated-links.gif" />
+
     <link rel="icon" type="image/png" sizes="16x16" href="/champion-static/images/favicons/CFX_favicon16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/champion-static/images/favicons/CFX_favicon32.png" />
-     <link rel="stylesheet" href="/champion-static/css/flex.min.css?qdmyc5mo" />
-     <link rel="stylesheet" href="/champion-static/css/style.min.css?qdmyc5mo" />
-     <link rel="stylesheet" href="https://style.champion-fx.com/binary.css?qdmyc5mo" />
-      <script src="/champion-static/js/bundle.js?qdmyc5mo" type="text/javascript"></script>
-     <script src="https://style.champion-fx.com/binary.js?qdmyc5mo" type="text/javascript"></script>
+     <link rel="stylesheet" href="https://style.champion-fx.com/binary.css?d3im9in7" />
+     <link rel="stylesheet" href="/champion-static/css/style.min.css?d3im9in7" />
+      <script src="/champion-static/js/bundle.js?d3im9in7" type="text/javascript"></script>
+     <script src="https://style.champion-fx.com/binary.js?d3im9in7" type="text/javascript"></script>
      
 </head>
 <body>
-    <div id="msg_notification" class="notice-msg center-text"></div>
-<div class="topbar primary-color-dark">
+    <!--email_off-->
+    <div id="top_group" class="logged-in">
+        <div id="msg_notification" class="notice-msg center-text"></div>
+<div id="topbar" class="primary-color-dark logged-in">
     <div class="menu-container">
         <div class="row">
             <div class="col-sm-12 topbar-container flex-items-sm-middle">
                 <div class="topbar-contacts">
                     <ul>
-                        <li class="last"><a href="/champion-static/en/contact.html">Contact Us</a></li>
-                        <li id="main-login" class="FX__Header__cta invisible"><a class="button-secondary" href="javascript:;">Log In</a></li>
+                        <li class="last hidden-lg-up">
+                            <a href="/champion-static/en/contact.html">
+                                <span class="fx-topbar fx-contact-icon"></span>
+                            </a>
+                        </li>
+                        <li class="last hidden-lg-down">
+                            <a href="/champion-static/en/contact.html">Contact Us</a>
+                        </li>
+                        <li class="FX__Header__cta invisible logged-out hidden-lg-down">
+                            <a class="btn-login button-secondary" href="javascript:;">Log In</a>
+                        </li>
                     </ul>
-                </div>
-                <div class="upgrade-message pulser invisible">
-                    <a href="/champion-static/en/new-account/real.html">Upgrade to a Real Account</a>
                 </div>
                 <div class="invisible">
                     <div class="languages">
@@ -66,10 +78,182 @@
         </div>
     </div>
 </div>
-    <div id="header" class="dark-blue header">
+        <div id="header" class="dark-blue header">
     <div class="menu-container">
         <div class="row">
-            <div class="col-md-3 col-sm-6 col-xs-6 vertical-center">
+            <!-- Mobile menu toggle -->
+            <div class="col-lg-2 col-sm-4 col-xs-5 hidden-lg-up vertical-center">
+                <div class="nav-menu nav-toggle-dropdown">
+                    <a href="javascript:;" id="mobile_menu_icon" class="vertical-center hidden-lg-up"><span></span></a>
+                </div>
+            </div>
+
+
+            <!-- Mobile menu dropdown -->
+            <div id="mobile-menu" class="nav-menu">
+                <ul class="nav-menu-dropdown hidden-lg-up">
+                    <div class="login-id-list"></div>
+                    <li class="invisible logged-in mt-hide">
+            <a href="/champion-static/en/user/metatrader.html" class="">
+                <span class="nav-menu-icon pull-left fx-mt5-icon"></span>
+                MetaTrader 5
+                
+            </a>
+            
+        </li>
+    
+        <li class="invisible logged-in ">
+            <a href="/champion-static/en/cashier.html" class="">
+                <span class="nav-menu-icon pull-left fx-cashier-icon"></span>
+                Cashier
+                
+            </a>
+            
+        </li>
+    
+        <li class="invisible logged-in ">
+            <a href="/champion-static/en/user/settings.html" class="">
+                <span class="nav-menu-icon pull-left fx-setting-icon"></span>
+                Settings
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="/champion-static/en/about-us.html" class="">
+                <span class="nav-menu-icon pull-left fx-about-icon"></span>
+                About Us
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="javascript:;" id="more_mt5_btn" class=" nav-dropdown-toggle">
+                <span class="nav-menu-icon pull-left fx-mt5-icon"></span>
+                MetaTrader 5
+                <span class="nav-menu-icon pull-right fx-moremenu-icon"></span>
+            </a>
+            
+            <ul class="invisible submenu">
+                <li class=" ">
+            <a href="/champion-static/en/trading-platform/metatrader-5.html" class="">
+                
+                About MT5
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="/champion-static/en/trading-platform/mt5-types-of-accounts.html" class="">
+                
+                Types of accounts
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="/champion-static/en/forex.html" class="">
+                
+                Forex
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="/champion-static/en/cfd.html" class="">
+                
+                CFDs
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="/champion-static/en/metals.html" class="">
+                
+                Metals
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="/champion-static/en/economic-calendar.html" class="">
+                
+                Economic calendar
+                
+            </a>
+            
+        </li>
+            </ul>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="javascript:;" id="more_options_btn" class=" nav-dropdown-toggle">
+                <span class="nav-menu-icon pull-left fx-binary-icon"></span>
+                Binary Options
+                <span class="nav-menu-icon pull-right fx-moremenu-icon"></span>
+            </a>
+            
+            <ul class="invisible submenu">
+                <li class=" ">
+            <a href="/champion-static/en/binary-options.html" class="">
+                
+                About binary options
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="/champion-static/en/types-of-accounts.html" class="">
+                
+                Types of accounts
+                
+            </a>
+            
+        </li>
+            </ul>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="/champion-static/en/trading-platform.html" class="">
+                <span class="nav-menu-icon pull-left fx-trading-icon"></span>
+                Trading Platforms
+                
+            </a>
+            
+        </li>
+    
+        <li class=" ">
+            <a href="/champion-static/en/partnerships.html" class="">
+                <span class="nav-menu-icon pull-left fx-partnership-icon"></span>
+                Partnerships
+                
+            </a>
+            
+        </li>
+    
+        <li class="invisible logged-in ">
+            <a href="/champion-static/en/user/settings.html" class="btn-logout logout invisible logged-in">
+                <span class="nav-menu-icon pull-left fx-signout-icon"></span>
+                Sign out
+                
+            </a>
+            
+        </li>
+                    <div class="separator-line-thin-gray"></div>
+                </ul>
+            </div>
+
+            <div class="col-xl-3 col-lg-8 col-sm-4 col-xs-2 vertical-center">
                 <div class="logo-wrapper">
                     <a href="/champion-static/en/home.html" class="logo-parent">
                         <div class="logo">
@@ -81,110 +265,192 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-2 push-md-7 col-sm-6 col-xs-6 vertical-center">
-                <div id="main-logout" class="hidden-lg-up">
-                    <ul id="main-account" class="nav-menu main-nav">
-                        <li id="mobile_menu_icon" class="logged-out vertical-center hidden-lg-up invisible"><span></span></li>
-                        <li class="account logged-in invisible">
-                            <a href="javascript:;">
-                                <div class="main-account">
-                                    <div class="account-type"></div>
-                                    <div class="account-id"></div>
-                                    <div class="topMenuBalance"></div>
-                                </div>
-                                <div class="nav-caret"></div>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul id="all-accounts" class="nav-menu main-nav">
-                        <li class="account">
-                            <a href="javascript:;" class="menu-icon">
-                                <div class="main-account">
-                                    <div class="account-type"></div>
-                                    <div class="account-id"></div>
-                                    <div class="topMenuBalance">&nbsp;</div>
-                                </div>
-                                <div class="nav-caret"></div>
-                            </a>
-                            <ul>
-                                <a class="link invisible logged-out" href="/champion-static/en/home.html#signup">
-                                    <li>Sign Up</li>
-                                </a>
-                                <a class="link invisible logged-in" href="/champion-static/en/user/settings.html">
-                                    <li class="topMenuSettings">Settings</li>
-                                </a>
-                                <div class="separator-line-thin-gray"></div>
-                                <a class="link invisible logged-in" href="/champion-static/en/cashier.html">
-                                    <li class="topMenuCashier">Cashier</li>
-                                </a>
-                                <div class="separator-line-thin-gray invisible logged-in"></div>
-                                <a href="/champion-static/en/about-us.html" class="hidden-lg-up">
-                                    <li>About</li>
-                                </a>
-                                <li class="hidden-lg-up has-sub">
-                                    <a href="javascript:;">MT5</a>
-                                    <ul class="invisible">
-                                        <li><a href="/champion-static/en/forex.html">Forex</a></li>
-                                        <li><a href="/champion-static/en/cfd.html">CFDs</a></li>
-                                        <li><a href="/champion-static/en/metals.html">Metals</a></li>
-                                    </ul>
-                                </li>
-                                <a href="/champion-static/en/binary-options.html" class="hidden-lg-up">
-                                    <li>Binary Options</li>
-                                </a>
-                                <a href="/champion-static/en/trading-platform.html" class="hidden-lg-up">
-                                    <li>Trading Platforms</li>
-                                </a>
-                                <a href="/champion-static/en/partnerships.html" class="hidden-lg-up">
-                                    <li>Partnerships</li>
-                                </a>
-                                <div class="separator-line-thin-gray hidden-lg-up invisible logged-in"></div>
-                                <div class="login-id-list"></div>
-                                <a href="javascript:;" id="btn_logout" class="logout invisible logged-in">
-                                    <li>Sign out</li>
-                                </a>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div id="main-signup" class="logged-out invisible hidden-lg-down">
-                    <ul class="signup-button">
-                        <li class="">
-                            <a class="button-secondary" href="/champion-static/en/home.html#signup"><span>Sign Up</span></a>
-                        </li>
-                    </ul>
-                </div>
+
+
+            <div class="col-lg-7 hidden-lg-down vertical-center">
+                <ul class="top-nav-menu invisible logged-out">
+    
+        <li>
+            <a href="/champion-static/en/about-us.html" class="nav-dropdown-toggle">About Us</a>
+            
+        </li>
+    
+        <li>
+            <a href="javascript:;" class="nav-dropdown-toggle">MetaTrader 5<span class="nav-caret"></span></a>
+            
+                <ul class="top-nav-menu invisible logged-out">
+    
+        <li>
+            <a href="/champion-static/en/trading-platform/metatrader-5.html" class="nav-dropdown-toggle">About MT5</a>
+            
+        </li>
+    
+        <li>
+            <a href="/champion-static/en/trading-platform/mt5-types-of-accounts.html" class="nav-dropdown-toggle">Types of accounts</a>
+            
+        </li>
+    
+        <li>
+            <a href="/champion-static/en/forex.html" class="nav-dropdown-toggle">Forex</a>
+            
+        </li>
+    
+        <li>
+            <a href="/champion-static/en/cfd.html" class="nav-dropdown-toggle">CFDs</a>
+            
+        </li>
+    
+        <li>
+            <a href="/champion-static/en/metals.html" class="nav-dropdown-toggle">Metals</a>
+            
+        </li>
+    
+        <li>
+            <a href="/champion-static/en/economic-calendar.html" class="nav-dropdown-toggle">Economic calendar</a>
+            
+        </li>
+    
+    </ul>
+            
+        </li>
+    
+        <li>
+            <a href="javascript:;" class="nav-dropdown-toggle">Binary Options<span class="nav-caret"></span></a>
+            
+                <ul class="top-nav-menu invisible logged-out">
+    
+        <li>
+            <a href="/champion-static/en/binary-options.html" class="nav-dropdown-toggle">About binary options</a>
+            
+        </li>
+    
+        <li>
+            <a href="/champion-static/en/types-of-accounts.html" class="nav-dropdown-toggle">Types of accounts</a>
+            
+        </li>
+    
+    </ul>
+            
+        </li>
+    
+        <li>
+            <a href="/champion-static/en/trading-platform.html" class="nav-dropdown-toggle">Trading platforms</a>
+            
+        </li>
+    
+        <li>
+            <a href="/champion-static/en/partnerships.html" class="nav-dropdown-toggle">Partnerships</a>
+            
+        </li>
+    
+    </ul>
+                <ul class="top-nav-menu invisible logged-in">
+    
+        <li class="mt-hide">
+            <a href="/champion-static/en/user/settings.html" class="nav-dropdown-toggle">Settings</a>
+            
+        </li>
+    
+        <li class="mt-show">
+            <a href="/champion-static/en/user/metatrader.html" class="nav-dropdown-toggle">Settings</a>
+            
+        </li>
+    
+        <li class="mt-hide">
+            <a href="/champion-static/en/cashier.html" class="nav-dropdown-toggle">Cashier</a>
+            
+        </li>
+    
+        <li class="mt-hide">
+            <a href="/champion-static/en/trading-platform/champion-trader.html" class="nav-dropdown-toggle">Trading platforms</a>
+            
+        </li>
+    
+        <li class="mt-show">
+            <a href="/champion-static/en/trading-platform/metatrader-5.html" class="nav-dropdown-toggle">Trading platforms</a>
+            
+        </li>
+    
+        <li>
+            <a href="https://academy.champion-fx.com/" target="_blank" class="nav-dropdown-toggle">Academy</a>
+            
+        </li>
+    
+    </ul>
             </div>
-            <div class="col-md-7 pull-md-2 hidden-lg-down vertical-center">
-                <ul class="top-nav-menu">
-                    <li>
-                        <a href="/champion-static/en/about-us.html" class="nav-dropdown-toggle">About</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" class="nav-dropdown-toggle">
-                            MT5
-                            <span class="nav-caret"></span>
+
+            <div class="col-lg-2 col-sm-4 col-xs-5 vertical-center">
+                <div class="right-align">
+                    <div class="logged-out invisible">
+                        <div id="main-login" class="hidden-lg-up">
+                            <ul class="login-button">
+                                <li><a class="btn-login button" href="javascript:;"><span>Log In</span></a></li>
+                            </ul>
+                        </div>
+                        <div id="main-signup">
+                            <ul class="signup-button">
+                                <li><a class="button-secondary" href="/champion-static/en/home.html#signup"><span>Sign Up</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Desktop menu -->
+
+                    <div class="logged-in invisible hidden-lg-up">
+                        <a id="account-info" href="javascript:;" class="main-account nav-menu nav-toggle-dropdown">
+                            <div class="account-id mt-hide"></div>
+    <span class="account-balance mt-hide"></span>
+    <span class="account-type mt-hide"></span>
+    <div class="mt-show invisible">MetaTrader 5</div>
                         </a>
-                        <ul>
-                            <li><a href="/champion-static/en/forex.html">Forex</a></li>
-                            <li><a href="/champion-static/en/cfd.html">CFDs</a></li>
-                            <li><a href="/champion-static/en/metals.html">Metals</a></li>
+                    </div>
+                    <div id="main-logout" class="logged-in invisible hidden-lg-down">
+                        <ul id="main-account" class="nav-menu main-nav hidden-lg-down">
+                            <li class="account">
+                                <a href="javascript:;">
+                                    <div class="main-account">
+                                        <div class="account-id mt-hide"></div>
+    <span class="account-balance mt-hide"></span>
+    <span class="account-type mt-hide"></span>
+    <div class="mt-show invisible">MetaTrader 5</div>
+                                    </div>
+                                    <div class="nav-caret"></div>
+                                </a>
+                            </li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="/champion-static/en/binary-options.html" class="nav-dropdown-toggle">Binary Options</a>
-                    </li>
-                    <li>
-                        <a href="/champion-static/en/trading-platform.html" class="nav-dropdown-toggle">Trading Platforms</a>
-                    </li>
-                    <li>
-                        <a href="/champion-static/en/partnerships.html" class="nav-dropdown-toggle">Partnerships</a>
-                    </li>
-                </ul>
+                        <ul id="all-accounts" class="nav-menu main-nav hidden-lg-down">
+                            <li class="account">
+                                <a href="javascript:;" class="menu-icon">
+                                    <div class="main-account">
+                                        <div class="account-id mt-hide"></div>
+    <span class="account-balance mt-hide"></span>
+    <span class="account-type mt-hide"></span>
+    <div class="mt-show invisible">MetaTrader 5</div>
+                                    </div>
+                                    <div class="nav-caret"></div>
+                                </a>
+                                <ul>
+                                    <div class="login-id-list"></div>
+                                    <a href="/champion-static/en/new-account/real.html" class="upgrade invisible">
+                                        <li>Upgrade to<br />Real Account</li>
+                                        <div class="separator-line-thin-gray"></div>
+                                    </a>
+                                    <a href="/champion-static/en/user/metatrader.html" class="mt-hide">
+                                        <li>MetaTrader 5</li>
+                                        <div class="separator-line-thin-gray"></div>
+                                    </a>
+                                    <a href="javascript:;" class="btn-logout logout">
+                                        <li>Sign out</li>
+                                    </a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+    </div>
     <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K79SQVR"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -197,81 +463,469 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <main class="page-content" aria-label="Content" id="champion-container">
         <div class="wrapper" id="champion-content">
+            <div class="primary-color-dark payment-methods-header">
+    <div class="fx-panel center-text center-vertical container">
+        <h1 class="content-inverse-color">Available payment methods</h1>
+        <p class="content-inverse-color">*Champion-FX uses USD as our base currency. Every other currency will be automatically converted into USD.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <div id="payment_methods" class="row">
+                <div class="col-xs-4 col-sm-3 col-md-12">
+                    <div class="row tabs-container">
+                        <div class="previous-button hide">
+                            <div class="arrow arrow-left arrow-up"></div>
+                        </div>
+                        <div class="col-md-11 tab-buttons">
+                            
+                            <ul class="scrollable-tabs">
+                                    
+                                    <li class="col-sm-12 col-md-2 tab-selected ">
+                                        <a rel="#visa"><div class="tab-icon visa"></div></a>
+                                    </li>
+                                    
+                                    <li class="col-sm-12 col-md-2  ">
+                                        <a rel="#mastercard"><div class="tab-icon mastercard"></div></a>
+                                    </li>
+                                    
+                                    <li class="col-sm-12 col-md-2  ">
+                                        <a rel="#neteller"><div class="tab-icon neteller"></div></a>
+                                    </li>
+                                    
+                                    <li class="col-sm-12 col-md-2  ">
+                                        <a rel="#skrill"><div class="tab-icon skrill"></div></a>
+                                    </li>
+                                    
+                                    <li class="col-sm-12 col-md-2  ">
+                                        <a rel="#paysafe"><div class="tab-icon paysafe"></div></a>
+                                    </li>
+                                    
+                                    <li class="col-sm-12 col-md-2  ">
+                                        <a rel="#ecopayz"><div class="tab-icon ecopayz"></div></a>
+                                    </li>
+                                    
+                                    <li class="col-sm-12 col-md-2  ">
+                                        <a rel="#bankwire"><div class="tab-icon bankwire"></div></a>
+                                    </li>
+                                    
+                                </ul>
+                        </div>
+                        <div class="next-button col-md-1">
+                            <div class="arrow arrow-right arrow-down"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content col-xs-8 col-sm-9 col-md-12">
+                    
+                    <div class="tab-content-wrapper col-sm">
+                        <div id=visa class="row">
+                            <div class="col-sm-12 col-md-3">
+                                <p>Currencies</p>
+                                <h4>USD, GBP, EUR, AUD</h4>
+                                <p>Processing time*</p>
+                                <h4>Deposit: Instant
+                                    <br/>Withdrawal: 1 working day</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <p>Min-max deposit:</p>
+                                <h4>10 - 10,000</h4>
+                                <p>Min-max withdrawal:</p>
+                                <h4>10 - 10,000</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <p>How to fund your account:</p>
+                                <ol>
+                                    
+                                        <li>
+                                            Log into your ChampionFX account
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            Go to
+                                            <a class="underline-link" href="forward.html#deposit">Cashier > Deposit</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            Select Visa from the list of available payment methods
+                                            
+                                        </li>
+                                    
+
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div id=mastercard class="row">
+                            <div class="col-sm-12 col-md-3">
+                                <p>Currencies</p>
+                                <h4>USD, GBP, EUR, AUD</h4>
+                                <p>Processing time*</p>
+                                <h4>Deposit: Instant
+                                    <br/>Withdrawal: 1 working day</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <p>Min-max deposit:</p>
+                                <h4>10 - 10,000</h4>
+                                <p>Min-max withdrawal:</p>
+                                <h4>10 - 10,000</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <p>How to fund your account:</p>
+                                <ol>
+                                    
+                                        <li>
+                                            Log into your ChampionFX account
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            Go to
+                                            <a class="underline-link" href="forward.html#deposit">Cashier > Deposit</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            Select Mastercard from the list of available payment methods
+                                            
+                                        </li>
+                                    
+
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div id=neteller class="row">
+                            <div class="col-sm-12 col-md-3">
+                                <p>Currencies</p>
+                                <h4>USD, GBP, EUR, AUD</h4>
+                                <p>Processing time*</p>
+                                <h4>Deposit: Instant
+                                    <br/>Withdrawal: 1 working day</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <p>Min-max deposit:</p>
+                                <h4>5 - 10,000</h4>
+                                <p>Min-max withdrawal:</p>
+                                <h4>5 - 10,000</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <p>How to fund your account:</p>
+                                <ol>
+                                    
+                                        <li>
+                                            Log into your ChampionFX account
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            Go to
+                                            <a class="underline-link" href="forward.html#deposit">Cashier > Deposit</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            Select Neteller from the list of available payment methods
+                                            
+                                        </li>
+                                    
+
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div id=skrill class="row">
+                            <div class="col-sm-12 col-md-3">
+                                <p>Currencies</p>
+                                <h4>USD, GBP, EUR, AUD</h4>
+                                <p>Processing time*</p>
+                                <h4>Deposit: Instant
+                                    <br/>Withdrawal: 1 working day</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <p>Min-max deposit:</p>
+                                <h4>5 - 10,000</h4>
+                                <p>Min-max withdrawal:</p>
+                                <h4>5 - 10,000</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <p>How to fund your account:</p>
+                                <ol>
+                                    
+                                        <li>
+                                            Log into your ChampionFX account
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            Go to
+                                            <a class="underline-link" href="forward.html#deposit">Cashier > Deposit</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            Select Skrill from the list of available payment methods
+                                            
+                                        </li>
+                                    
+
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div id=paysafe class="row">
+                            <div class="col-sm-12 col-md-3">
+                                <p>Currencies</p>
+                                <h4>USD, GBP, EUR, AUD</h4>
+                                <p>Processing time*</p>
+                                <h4>Deposit: Instant
+                                    <br/>Withdrawal: 1 working day</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <p>Min-max deposit:</p>
+                                <h4>5 - 750</h4>
+                                <p>Min-max withdrawal:</p>
+                                <h4>5 - 750</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <p>How to fund your account:</p>
+                                <ol>
+                                    
+                                        <li>
+                                            Log into your ChampionFX account
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            Go to
+                                            <a class="underline-link" href="forward.html#deposit">Cashier > Deposit</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            Select PaySafeCard from the list of available payment methods
+                                            
+                                        </li>
+                                    
+
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div id=ecopayz class="row">
+                            <div class="col-sm-12 col-md-3">
+                                <p>Currencies</p>
+                                <h4>USD, GBP, EUR, AUD</h4>
+                                <p>Processing time*</p>
+                                <h4>Deposit: Instant
+                                    <br/>Withdrawal: 1 working day</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <p>Min-max deposit:</p>
+                                <h4>5 - 10,000</h4>
+                                <p>Min-max withdrawal:</p>
+                                <h4>5 - 10,000</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <p>How to fund your account:</p>
+                                <ol>
+                                    
+                                        <li>
+                                            Log into your ChampionFX account
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            Go to
+                                            <a class="underline-link" href="forward.html#deposit">Cashier > Deposit</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            Select EcoPayz from the list of available payment methods
+                                            
+                                        </li>
+                                    
+
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div id=bankwire class="row">
+                            <div class="col-sm-12 col-md-3">
+                                <p>Currencies</p>
+                                <h4>USD, GBP, EUR, AUD</h4>
+                                <p>Processing time*</p>
+                                <h4>Deposit: 1 working day
+                                    <br/>Withdrawal: 3-5 working days</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <p>Min-max deposit:</p>
+                                <h4>100 - 100,000</h4>
+                                <p>Min-max withdrawal:</p>
+                                <h4>100 - 1,000,000</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <p>How to fund your account:</p>
+                                <ol>
+                                    
+                                        <li>
+                                            Log into your ChampionFX account
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            Go to
+                                            <a class="underline-link" href="forward.html#deposit">Cashier > Deposit</a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            Select Bankwire from the list of available payment methods
+                                            
+                                        </li>
+                                    
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="hint">*All your deposits and withdrawals are processed by ChampionFX within 24 hours. However, there may be additional processing time required by your bank or money transfer service.</p>
+
+                <div class="col-md-12 center-text">
+                    <a id="btn-signup" class="button invisible" href="/champion-static/en/home.html#signup"><span>Sign up</span>
+                    </a>
+                    <a id="btn-cashier" class="button-secondary invisible" href="/champion-static/en/cashier.html">
+                        <span>Go to cashier</span>
+                    </a>
+                </div>
+            </div>
+
             <div class="fx-section">
-    <div class="fx-payment-methods container">
+                <h1 class="center-text">Compare payment methods</h1>
+                
+                
+                <div id="payment_methods_table">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr class="gr-row gr-padding-10 table-header">
+                        <td>Payment method</td>
+                        <td>Currencies</td>
+                        <td>Min-max deposit</td>
+                        <td>Min-max withdrawal</td>
+                        <td>Deposit processing time</td>
+                        <td>Withdrawal processing time</td>
+                    </tr>
+                            </thead>
+                            <tbody>
+                        
+                            <tr class="gr-row gr-padding-10 table-body">
+                        <td><div id="visa" class="visa payment-logo"></div></td>
+                        <td>USD GBP EUR AUD</td>
+                        <td>10 - 10,000</td>
+                        <td>10 - 10,000</td>
+                        <td>Instant</td>
+                        <td>1 working day</td>
+                    </tr>
+                        
+                            <tr class="gr-row gr-padding-10 table-body">
+                        <td><div id="mastercard" class="mastercard payment-logo"></div></td>
+                        <td>USD GBP EUR AUD</td>
+                        <td>10 - 10,000</td>
+                        <td>10 - 10,000</td>
+                        <td>Instant</td>
+                        <td>1 working day</td>
+                    </tr>
+                        
+                            <tr class="gr-row gr-padding-10 table-body">
+                        <td><div id="neteller" class="neteller payment-logo"></div></td>
+                        <td>USD GBP EUR AUD</td>
+                        <td>5 - 10,000</td>
+                        <td>5 - 10,000</td>
+                        <td>Instant</td>
+                        <td>1 working day</td>
+                    </tr>
+                        
+                            <tr class="gr-row gr-padding-10 table-body">
+                        <td><div id="skrill" class="skrill payment-logo"></div></td>
+                        <td>USD GBP EUR AUD</td>
+                        <td>5 - 10,000</td>
+                        <td>5 - 10,000</td>
+                        <td>Instant</td>
+                        <td>1 working day</td>
+                    </tr>
+                        
+                            <tr class="gr-row gr-padding-10 table-body">
+                        <td><div id="paysafe" class="paysafe payment-logo"></div></td>
+                        <td>USD GBP EUR AUD</td>
+                        <td>5 - 750</td>
+                        <td>5 - 750</td>
+                        <td>Instant</td>
+                        <td>1 working day</td>
+                    </tr>
+                        
+                            <tr class="gr-row gr-padding-10 table-body">
+                        <td><div id="ecopayz" class="ecopayz payment-logo"></div></td>
+                        <td>USD GBP EUR AUD</td>
+                        <td>5 - 10,000</td>
+                        <td>5 - 10,000</td>
+                        <td>Instant</td>
+                        <td>1 working day</td>
+                    </tr>
+                        
+                            <tr class="gr-row gr-padding-10 table-body">
+                        <td><div id="bankwire" class="bankwire payment-logo"></div></td>
+                        <td>USD GBP EUR AUD</td>
+                        <td>100 - 100,000</td>
+                        <td>100 - 1,000,000</td>
+                        <td>1 working day</td>
+                        <td>3-5 working days</td>
+                    </tr>
+                        
+                    </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
 
-        <div class="row">
-            <div class="col-sm">
-                <h1>Available payment methods</h1>
+            <div class="fx-section">
+                <h1 class="center-text">How deposits and withdrawals work</h1>
+                <div id="payment_methods_accordian">
+                    <h3>How do I deposit funds into my ChampionFX account?</h3>
+                    <div>You can deposit funds into your ChampionFX account through our Cashier service by using credit/debit card or e-currency.</div>
+                    <h3>What currencies do you support for deposits?</h3>
+                    <div>We accept deposits in the following currencies: US Dollar, Great Britain Pound, Euro, and Australian Dollar.</div>
+                    <h3>Can I transfer funds between my accounts?</h3>
+                    <div>Yes, to fund your MT5 account(s), you must fund your ChampionFX real account first. Then, you will transfer funds from your ChampionFX real account into your MT5 account(s).</div>
+                    <h3>Can I deposit funds using a credit or debit card?</h3>
+                    <div>Absolutely. We accept deposits using the following cards: Visa, MasterCard, and China UnionPay.</div>
+                    <h3>Do you charge a fee for each deposit and withdrawal?</h3>
+                    <div>All deposit and withdrawal transactions are free of fees or commissions.</div>
+                    <h3>Is there a minimum deposit amount?</h3>
+                    <div>Minimum deposits for our Champion Trader platform range from USD 5 to USD 10, depending on the payment method you use. There are no minimum deposit requirements for our MT5 platform. </div>
+                    <h3>Do my deposit and withdrawal methods have to be similar?</h3>
+                    <div>Yes, if you’ve deposited funds into your ChampionFX account using a certain payment source, you will need to withdraw your funds using the same payment source.</div>
+                    <h3>How long does it take for deposited funds to appear in my account? </h3>
+                    <div>Deposits are processed by ChampionFX within 24 hours. However, your bank or payment service provider may require additional processing time.</div>
+                    <h3>How do I withdraw funds from my ChampionFX account? </h3>
+                    <div>You can withdraw funds from your ChampionFX account through our Cashier service by using the same payment method used to deposit funds into your account.</div>
+                    <h3>How long does it take for ChampionFX to process my withdrawal request?</h3>
+                    <div>Withdrawals are processed by ChampionFX within 24 hours. However, your bank or payment service provider may require additional processing time.</div>
+                    <h3>Can I see a history of all my deposits and withdrawals?</h3>
+                    <div>Yes, just log into ChampionFX and then select ‘Statement’ from the drop-down menu in the top right-hand corner of the window. You will be able to see all trades, deposits, and withdrawals that have taken place on your account.</div>
+                    <h3>Do you allow third-party payments? </h3>
+                    <div>Unfortunately, no. Under the terms of our financial license, third-party payments are not allowed due to its high risk for abuse.</div>
+                </div>
             </div>
         </div>
-
-        <div class="row center-text">
-            <div class="col-sm">
-                <a class="button button_large invisible" href="/champion-static/en/home.html" id="btn-open-account">
-                    <span>Open an account now</span>
-                </a>
-                <a class="button button_large invisible" href="/champion-static/en/cashier/forward.html#deposit" id="btn-deposit">
-                    <span>Deposit</span>
-                </a>
-                <a class="button button_large invisible" href="/champion-static/en/cashier/forward.html#withdraw" id="btn-withdraw">
-                    <span>Withdraw</span>
-                </a>
-            </div>
-        </div>
-
-        <div class="row">
-            <table class="table">
-                <tr>
-                    <th>Method</th>
-                    <th>Currencies</th>
-                    <th>Min-Max Deposit</th>
-                    <th>Min-Max Withdrawal</th>
-                    <th>Processing Time*</th>
-                </tr>
-
-                <!-- Credit / Debit card section -->
-                <tr>
-                    <th class="fx-subheader" colspan="5">Credit / Debit card</th>
-                </tr>
-                <tr>
-                    <td id="visa"></td>
-                    <td>USD GBP EUR AUD</td>
-                    <td>10 - 10,000</td>
-                    <td>10 - 10,000</td>
-                    <td>Deposit: Instant<br>Withdraw: 1 working day</td>
-                </tr>
-                <tr>
-                    <td id="mastercard"></td>
-                    <td>USD GBP EUR AUD</td>
-                    <td>10 - 10,000</td>
-                    <td>10 - 10,000</td>
-                    <td>Deposit: Instant<br>Withdraw: 1 working day</td>
-                </tr>
-                <tr>
-                    <td id="cuo-credit-card"></td>
-                    <td>USD</td>
-                    <td>10 - 1,000</td>
-                    <td></td>
-                    <td>Deposit: Instant<br>Withdraw: Not applicable</td>
-                </tr>
-
-                <!-- E-cash section -->
-                <tr>
-                    <th class="fx-subheader" colspan="5">E-cash</th>
-                </tr>
-                <tr>
-                    <td id="moneybrokers"></td>
-                    <td>USD GBP EUR AUD</td>
-                    <td>5 - 10,000</td>
-                    <td>5 - 10,000</td>
-                    <td>Deposit: Instant<br>Withdraw: 1 working day</td>
-                </tr>
-            </table>
-
-            <p class="hint">*All your deposits and withdrawals are processed by ChampionFX within 24 hours. However, there may be additional processing time required by your bank or money transfer service.</p>
-        </div>
-
     </div>
 </div>
         </div>
@@ -283,77 +937,81 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="col-sm-10 col-xs-12">
                     <div class="row">
                         <div class="col-xs-6 col-md-3">
-                            <h4>ChampionFX</h4>
-    <div class="separator-line-thin-gray"></div>
-    <ul>
-        
-            <li><a href="/champion-static/en/about-us.html">About</a></li>
-        
-            <li><a href="/champion-static/en/licensing.html">License</a></li>
-        
-    </ul>
-                            <h4>Partnerships</h4>
-    <div class="separator-line-thin-gray"></div>
-    <ul>
-        
-            <li><a href="/champion-static/en/partnerships-ib.html">Introducing Broker (IB)</a></li>
-        
-            <li><a href="/champion-static/en/partnerships-affiliate.html">Affiliate</a></li>
-        
-            <li><a href="/champion-static/en/partnerships-contributor.html">Content Contributor</a></li>
-        
-    </ul>
+                            <div>
+        <h4>ChampionFX</h4>
+        <div class="separator-line-thin-gray"></div>
+        <ul>
+            
+                <li class=""><a href="/champion-static/en/about-us.html">About Us</a></li>
+            
+                <li class=""><a href="/champion-static/en/contact.html">Contact Us</a></li>
+            
+                <li class=""><a href="/champion-static/en/licensing.html">License</a></li>
+            
+                <li class="mt-hide"><a href="/champion-static/en/terms-and-conditions.html">Terms and Conditions</a></li>
+            
+                <li class="mt-show invisible"><a href="/champion-static/en/terms-and-conditions.html#legal-cfd">Terms and Conditions</a></li>
+            
+                <li class=""><a href="/champion-static/en/cashier/payment-methods.html">Payment Methods</a></li>
+            
+        </ul>
+    </div>
                         </div>
                         <div class="col-xs-6 col-md-3">
-                            <h4>MT5</h4>
-    <div class="separator-line-thin-gray"></div>
-    <ul>
-        
-            <li><a href="/champion-static/en/forex.html">Forex</a></li>
-        
-            <li><a href="/champion-static/en/cfd.html">CFDs</a></li>
-        
-            <li><a href="/champion-static/en/metals.html">Metals</a></li>
-        
-            <li><a href="/champion-static/en/forex.html#forex-accounts">Types of accounts</a></li>
-        
-            <li><a href="/champion-static/en/trading-platform/metatrader-5.html">MT5 trading platforms</a></li>
-        
-    </ul>
+                            <div>
+        <h4>Partnerships</h4>
+        <div class="separator-line-thin-gray"></div>
+        <ul>
+            
+                <li class=""><a href="/champion-static/en/partnerships-ib.html">Introducing Broker (IB)</a></li>
+            
+                <li class=""><a href="/champion-static/en/partnerships-affiliate.html">Affiliate</a></li>
+            
+                <li class=""><a href="/champion-static/en/partnerships-contributor.html">Content Contributor</a></li>
+            
+                <li class=""><a href="/champion-static/en/liquidity-solutions.html">Liquidity Solutions</a></li>
+            
+        </ul>
+    </div>
                         </div>
-                        <div class="col-xs-6 col-md-3">
-                            <h4>Binary options</h4>
-    <div class="separator-line-thin-gray"></div>
-    <ul>
-        
-            <li><a href="/champion-static/en/range-of-markets.html">Range of markets</a></li>
-        
-            <li><a href="/champion-static/en/types-of-accounts.html">Types of accounts</a></li>
-        
-            <li><a href="/champion-static/en/trading-platform/champion-trader.html">Binary options trading platforms</a></li>
-        
-    </ul>
+                        <div class="col-xs-6 col-md-3 mt-show">
+                            <div>
+        <h4>MetaTrader 5</h4>
+        <div class="separator-line-thin-gray"></div>
+        <ul>
+            
+                <li class=""><a href="/champion-static/en/forex.html">Forex</a></li>
+            
+                <li class=""><a href="/champion-static/en/cfd.html">CFDs</a></li>
+            
+                <li class=""><a href="/champion-static/en/metals.html">Metals</a></li>
+            
+                <li class=""><a href="/champion-static/en/trading-platform/mt5-types-of-accounts.html">Types of accounts</a></li>
+            
+                <li class=""><a href="/champion-static/en/trading-platform/metatrader-5.html">MetaTrader 5 trading platforms</a></li>
+            
+        </ul>
+    </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 mt-hide">
+                            <div>
+        <h4>Binary options</h4>
+        <div class="separator-line-thin-gray"></div>
+        <ul>
+            
+                <li class=""><a href="/champion-static/en/binary-options.html">About binary options</a></li>
+            
+                <li class=""><a href="/champion-static/en/types-of-accounts.html">Types of accounts</a></li>
+            
+                <li class=""><a href="/champion-static/en/trading-platform/champion-trader.html">Binary options trading platforms</a></li>
+            
+                <li class=""><a href="/champion-static/en/trading-times.html">Trading Times</a></li>
+            
+        </ul>
+    </div>
                         </div>
                         <div class="col-xs-6 col-md-3">
                             
-                            <h4>Legal</h4>
-    <div class="separator-line-thin-gray"></div>
-    <ul>
-        
-            <li><a href="/champion-static/en/terms-and-conditions.html">Terms and Conditions</a></li>
-        
-            <li><a href="/champion-static/en/home.html">&nbsp;</a></li>
-        
-    </ul>
-                            <h4>Resources</h4>
-    <div class="separator-line-thin-gray"></div>
-    <ul>
-        
-            <li><a href="/champion-static/en/trading-times.html">Trading Times</a></li>
-        
-            <li><a href="/champion-static/en/cashier/payment-methods.html">Payment Methods</a></li>
-        
-    </ul>
                         </div>
                     </div>
                 </div>
@@ -374,6 +1032,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <img src="/champion-static/images/symbols/yt.svg" alt="">
                             </a>
                         </li>
+                        <li>
+                            <a href="https://t.me/championfx" target="_blank">
+                                <img src="/champion-static/images/symbols/telegram.svg" alt="">
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -388,7 +1051,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
             <div class="row">
                 <div class="col-sm">
-                    ChampionFX is not available to residents of Afghanistan, Australia, Bosnia and Herzegovina, Costa Rica, any European Union country, Guyana, Hong Kong, Iran, Iraq, Japan, Jersey, Malaysia, North Korea, Syria, Uganda, USA, Vanuatu, and Yemen.
+                    ChampionFX is not available to residents of Australia, Bosnia and Herzegovina, Costa Rica, Democratic People's Republic of Korea (DPRK), any European Union country, Ethiopia, Guyana, Hong Kong, Iran, Iraq, Japan, Jersey, Malaysia, Syria, Uganda, USA, Vanuatu, and Yemen.
                 </div>
             </div>
         </div>
@@ -404,5 +1067,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
     <div id="end_note" class="invisible hidden-xs-down"></div>
 </footer>
+    <!--/email_off-->
 </body>
 </html>
