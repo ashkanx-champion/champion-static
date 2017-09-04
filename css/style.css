@@ -470,7 +470,7 @@ h1.main-title {
 }
 
 .fx-panel-item {
-  padding: 15px 10px 15px 15px;
+  padding: 15px;
   display: block;
   height: 150px;
 }
@@ -481,10 +481,14 @@ h1.main-title {
 }
 
 .fx-section {
-  padding: 40px 10px;
+  margin: 40px 0;
 }
 .fx-section .fx-features-title {
-  margin-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.fx-section > .row {
+  margin: 40px 0;
 }
 
 .fx-section-sm {
@@ -517,6 +521,10 @@ h1.main-title {
 
 .economic-calendar-header {
   background: url("../images/mt5/economic_calendar_banner.png") top left/cover no-repeat;
+}
+
+.partnerships-header {
+  background: url("../images/partnerships_banner.png") top left/cover no-repeat;
 }
 
 .fx-home-header {
@@ -638,7 +646,7 @@ h1.main-title {
 }
 
 #contact-us {
-  padding: 60px 0;
+  margin: 40px 0;
 }
 #contact-us .row-reverse {
   -webkit-box-orient: horizontal;
@@ -1294,46 +1302,6 @@ iframe {
   padding: 0;
 }
 
-#fx-liquidity .separator {
-  margin: 40px 0;
-}
-#fx-liquidity .bold-title {
-  font-weight: bold;
-  margin-bottom: 0;
-}
-#fx-liquidity p {
-  margin-top: 5px;
-  margin-bottom: 0;
-}
-#fx-liquidity .box, #fx-liquidity .box-bordered {
-  margin: 20px 0;
-  padding: 20px;
-}
-#fx-liquidity .box.box-col, #fx-liquidity .box-bordered.box-col {
-  min-height: 290px;
-}
-@media (max-width: 997px) {
-  #fx-liquidity .box.box-col, #fx-liquidity .box-bordered.box-col {
-    min-height: 235px;
-    margin-bottom: 0;
-  }
-}
-#fx-liquidity .box.box-bordered, #fx-liquidity .box-bordered.box-bordered {
-  border: 2px solid #f2f2f2;
-  background: none;
-  position: relative;
-  min-height: 210px;
-}
-#fx-liquidity .box.box-bordered .box-title, #fx-liquidity .box-bordered.box-bordered .box-title {
-  position: absolute;
-  top: -20px;
-  left: 10px;
-  background: #fff;
-  font-weight: bold;
-  color: #004385;
-  padding: 0 5px;
-}
-
 #choose_platform .bordered-light {
   padding: 10px 30px 30px;
   border: 3px solid #f2f2f2;
@@ -1341,14 +1309,14 @@ iframe {
   height: 100%;
 }
 
-#home-academy .row {
+#home-academy .row ~ .row {
   margin: 30px 0 20px;
   position: relative;
 }
-#home-academy .row [class*=fx-] {
+#home-academy .row ~ .row [class*=fx-] {
   margin-bottom: 20px;
 }
-#home-academy .row .fx-3-dots-line {
+#home-academy .row ~ .row .fx-3-dots-line {
   position: absolute;
   margin: auto;
   top: 15px;
@@ -1357,7 +1325,7 @@ iframe {
   right: 0;
 }
 @media (max-width: 800px) {
-  #home-academy .row .fx-3-dots-line {
+  #home-academy .row ~ .row .fx-3-dots-line {
     display: none;
   }
 }
@@ -1387,64 +1355,6 @@ iframe {
 }
 .table-fixed td {
   vertical-align: middle;
-}
-
-#mt5-accounts .box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 20px 15px;
-  border: 3px solid #f2f2f2;
-  min-height: 460px;
-}
-@media (min-width: 767px) {
-  #mt5-accounts .box {
-    min-height: 545px;
-  }
-}
-@media (min-width: 961px) {
-  #mt5-accounts .box {
-    min-height: 460px;
-  }
-}
-#mt5-accounts p {
-  font-size: 12px;
-}
-
-#why-mt5 .box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px;
-  min-height: 100px;
-}
-@media (min-width: 575px) {
-  #why-mt5 .box {
-    min-height: 205px;
-  }
-}
-
-.box-bordered {
-  border: 2px solid #f2f2f2;
 }
 
 .fx-advisors {
@@ -2174,10 +2084,6 @@ ul.checked.small > li {
   height: 1px !important;
 }
 
-.box {
-  margin-bottom: 2px;
-}
-
 .hint-msg {
   background: none;
   color: #9b9b9b;
@@ -2196,6 +2102,10 @@ ul.checked.small > li {
 
 .text-align-right {
   text-align: right;
+}
+
+.text-bold {
+  font-weight: bold;
 }
 
 .text-bordered {
@@ -2353,16 +2263,6 @@ ul.checked.small > li {
   margin: 0 0.31rem;
 }
 
-.col-bordered {
-  margin-top: 20px;
-  margin-right: 20px;
-  border: 1px solid #004385;
-}
-.col-bordered .box {
-  height: 100%;
-  padding: 15px 0;
-}
-
 .yt-container {
   position: relative;
   width: 100%;
@@ -2384,6 +2284,71 @@ p {
 
 .img-md {
   height: 80px;
+}
+
+.has-tabs .ui-tabs-panel {
+  padding: 0;
+  margin-top: 40px;
+}
+
+.box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+.box *:only-child {
+  margin: 0;
+}
+.box * {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.box *:last-child {
+  margin-bottom: 0;
+}
+.box > .box-item-end {
+  margin-top: auto;
+}
+.box-bordered {
+  border: 2px solid #f2f2f2;
+}
+.box-title {
+  position: absolute;
+  top: -10px;
+  left: 25px;
+  background: #fff;
+  font-weight: bold;
+  color: #004385;
+  padding: 0 5px;
+}
+
+.box-grid .box {
+  height: 100%;
+  min-height: 150px;
+}
+.box-grid .row ~ .row {
+  margin-top: 30px;
+}
+.box-grid-align-start .box {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.fx-section-padding {
+  padding: 40px 15px;
 }
 
 .bankwire {
@@ -3734,9 +3699,6 @@ p {
   .slider-footer {
     position: relative;
     background: #f2f2f2;
-  }
-
-  .license-box {
     color: #000;
   }
 }
@@ -3744,9 +3706,6 @@ p {
   .slider-footer {
     position: relative;
     background: #f2f2f2;
-  }
-
-  .license-box {
     color: #000;
   }
 
