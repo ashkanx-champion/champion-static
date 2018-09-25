@@ -26870,7 +26870,7 @@
 	    };
 
 	    var deposit_withdraw = function deposit_withdraw(token) {
-	        var req = { cashier: cashier_type, provider: 'epg' };
+	        var req = { cashier: cashier_type, provider: 'doughflow' };
 	        if (token) req.verification_code = token;
 
 	        ChampionSocket.send(req).then(function (response) {
