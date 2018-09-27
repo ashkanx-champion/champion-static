@@ -25556,7 +25556,7 @@
 
 	    var login_url = function login_url() {
 	        var server_url = localStorage.getItem('config.server_url');
-	        return server_url && /qa/.test(server_url) ? 'https://www.' + server_url.split('.')[1] + '.com/oauth2/authorize?app_id=' + getAppId() + '&l=' + getLanguage() + '&brand=champion' : 'https://oauth.champion-fx.com/oauth2/authorize?app_id=' + getAppId() + '&l=' + getLanguage();
+	        return server_url && /qa/.test(server_url) ? 'https://www.' + server_url.split('.')[1] + '.com/oauth2/authorize?app_id=' + getAppId() + '&l=' + getLanguage() : 'https://oauth.champion-fx.com/oauth2/authorize?app_id=' + getAppId() + '&l=' + getLanguage();
 	    };
 
 	    var social_login = function social_login(brand) {
@@ -30009,13 +30009,13 @@
 	        if ($('.modal--show').length) {
 	            $('body').css('position', 'static').append('<div class="modal-overlay"></div>');
 	            $('.modal-overlay').off('click', hideModal).on('click', hideModal);
-	            // resetForm();
+	            resetForm();
 
 	            // if sign-up success message is already visible, show sign-up form
-	            // if (!$after_signup_msg.hasClass(hidden_class)) {
-	            //     changeVisibility($after_signup_msg, 'hide');
-	            //     changeVisibility($before_signup_el, 'show');
-	            // }
+	            if ($after_signup_msg && !$after_signup_msg.hasClass(hidden_class)) {
+	                changeVisibility($after_signup_msg, 'hide');
+	                changeVisibility($before_signup_el, 'show');
+	            }
 	        }
 	    };
 
@@ -30025,10 +30025,12 @@
 	        $('.modal-overlay').remove();
 	    };
 
-	    // const resetForm = () => {
-	    //     $input.val('').removeClass('field-error');
-	    //     $(`${form_selector}:visible #signup_error`).addClass(hidden_class);
-	    // };
+	    var resetForm = function resetForm() {
+	        if ($input) {
+	            $input.val('').removeClass('field-error');
+	            $(form_selector + ':visible #signup_error').addClass(hidden_class);
+	        }
+	    };
 
 	    var changeVisibility = function changeVisibility($selector, action) {
 	        if (action === 'hide') {
