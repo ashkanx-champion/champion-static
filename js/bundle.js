@@ -24279,7 +24279,7 @@
 
 	    var getSocketURL = function getSocketURL() {
 	        var server = getServer();
-	        var params = ['brand=champion', 'app_id=' + getAppId(), 'l=' + getLanguage()];
+	        var params = ['app_id=' + getAppId(), 'l=' + getLanguage()];
 
 	        return 'wss://' + server + '/websockets/v3' + (params.length ? '?' + params.join('&') : '');
 	    };
